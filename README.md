@@ -44,6 +44,8 @@ Store unique keys and salts in Heroku environment variables. Wordpress can provi
       LOGGED_IN_SALT='put your unique phrase here' \
       NONCE_SALT='put your unique phrase here' \
 
+Ask Patrick for the WorkHands keys on Heroku if you need them.
+
 Deploy to Heroku
 
     $ git push heroku production:master
@@ -69,8 +71,10 @@ Because a file cannot be written to Heroku's file system, updating and installin
 
 ## Updating
 
+The below is not true. I set it up as workhands-blog so we can go private with it if necessary.
+
 Updating your WordPress version is just a matter of merging the updates into
-the branch created from the installation.
+the branch created from the installation. ()
 
     $ git pull # Get the latest
 
