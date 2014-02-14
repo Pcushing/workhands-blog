@@ -36,6 +36,10 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/** AWS Keys for IAM user for wp */
+define( 'AWS_ACCESS_KEY_ID', $_ENV["WP_AWS_ACCESS_KEY_ID"] );
+define( 'AWS_SECRET_ACCESS_KEY', $_ENV["WP_AWS_SECRET_ACCESS_KEY"] );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
