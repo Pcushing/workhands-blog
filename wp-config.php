@@ -58,8 +58,6 @@ define('SECURE_AUTH_SALT', getenv('SECURE_AUTH_SALT'));
 define('LOGGED_IN_SALT',   getenv('LOGGED_IN_SALT'));
 define('NONCE_SALT',       getenv('NONCE_SALT'));
 
-define('WP_HOME','http://localhost:8888');
-define('WP_SITEURL','http://localhost:8888');
 
 /**#@-*/
 
