@@ -178,7 +178,7 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 ul,
 ol {
@@ -373,7 +373,7 @@ textarea {
 
 /* Links */
 a {
-	color: #999;
+	color: #437d77;
 	text-decoration: underline;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
@@ -384,8 +384,8 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #000;
-	text-decoration: none;
+	color: #437d77;
+	text-decoration: underline;
 }
 
 /* Alignment */
@@ -448,7 +448,7 @@ a:active {
 	overflow: hidden;
 }
 #masthead-wrap {
-	background-color: #000;
+	background-color: #315C5B;
 	width: 100%;
 	clear:left;
 }
@@ -461,7 +461,26 @@ a:active {
 #masthead #logo {
 	float: left;
 	width: auto;
+	display: block;
+	height: 60px;
 }
+#masthead #logo img {
+	max-height: 60px;
+}
+
+#masthead .menu a{
+	font-size: 16px;
+	padding: 19px 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: -2px;
+}
+
+#masthead .menu a:hover {
+	background: #284b48;
+}
+
 .site-title {
 	color: #fff;
 	font-size: 1.0em;
@@ -469,7 +488,6 @@ a:active {
 	line-height: 1.7em;
 	margin: 0;
 	padding: 2px 0 0;
-	font-family:'arvo', georgia;
 	text-transform:uppercase;
 	letter-spacing:1px;
 }
@@ -543,7 +561,6 @@ body.page-template-page-full-width-php.widget-area .site-content{
 }
 .main-navigation {
 	float: right;
-	font-family: 'arvo', georgia;
 	padding-top: 2px;
 	text-transform: uppercase;
 }
@@ -1148,11 +1165,10 @@ object {
 .site-content .site-navigation {
 	margin: 30px 0;
 	overflow: hidden;
-	background: #000;
+	background: #315C5B;
 	padding: 0;
 	font-size: 15px;
 	font-weight: 600;
-	font-family: 'raleway', georgia, serif;
 	text-transform: uppercase;
 }
 .site-content .site-navigation a{
@@ -1173,12 +1189,14 @@ object {
 	text-align: right;
 	width: 48%;
 }
+.site-content .nav-previous:hover, .site-content .nav-next:hover {
+	background: #999;
+}
 .single .sharedaddy{
 	margin: 30px 0;
 }
 .sd-title {
 	color: #000 !important;
-	font-family: georgia !important;
 }
 
 
@@ -1246,7 +1264,6 @@ object {
 	font-size: .8em;
 }
 .comment-author {
-	font-family: raleway;
 	font-style: normal;
 }
 .comment-meta a {
@@ -1314,6 +1331,10 @@ object {
 	color: #fff;
 }
 
+.site-navigation.post-navigation {
+	background: #ccc;
+}
+
 
 /* =Widgets
 ----------------------------------------------- */
@@ -1336,7 +1357,6 @@ object {
 .widget-title a {
 	font-size: 15px;
 	font-weight: 600;
-	font-family: 'raleway', georgia, serif;
 	text-transform: uppercase;
 	display: block;
 	line-height: 1.5;
@@ -1678,7 +1698,6 @@ img#wpstats {
 	}
 	.main-navigation {
 		float: left;
-		font-family: 'arvo', georgia;
 		padding-top: 2px;
 		text-transform: uppercase;
 	}
@@ -1715,7 +1734,6 @@ img#wpstats {
 		font-size: 14px;
 		margin: 0;
 		padding: 15px 0;
-		font-family:raleway, arial;
 		text-align:center;
 	}
 	.site-navigation h1.menu-toggle:hover{
@@ -1734,7 +1752,6 @@ img#wpstats {
 		list-style-type: none;
 		margin: 3% 3% 0 3%;
 		padding-bottom: 10px;
-		font-family: 'arvo', georgia;
 		text-transform: uppercase;
 		font-size:13px;
 	}
@@ -1789,7 +1806,6 @@ img#wpstats {
 		color: #fff;
 	}
 	#main .post-thumb .header-wrapper .entry-title {
-		font-family: "raleway", sans-serif;
 		text-transform: uppercase;
 		line-height: 1.0344827586;
 		padding: 0;

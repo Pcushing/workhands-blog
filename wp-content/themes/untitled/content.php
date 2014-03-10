@@ -22,7 +22,6 @@
 				<?php endif; ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
-			<?php edit_post_link( __( 'Edit', 'untitled' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 		</div><!-- .header-wrapper -->
 
 	<?php else : ?>
@@ -34,11 +33,9 @@
 		</header><!-- .entry-header -->
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php untitled_posted_on(); ?>
-			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-			<span class="sep"> - </span>
-			<span class="comments-link"><?php comments_popup_link( __( '0 comments', 'untitled' ), __( '1 Comment', 'untitled' ), __( '% Comments', 'untitled' ) ); ?></span>
-			<?php endif; ?>
+			<?php the_date('m/j/Y') ?> by <?php the_author(); ?>
+			<span class="sep">-</span>
+			<a href="<?php the_author_meta('user_url') ?>" target="_blank">Profile</a>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 
