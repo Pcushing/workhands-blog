@@ -128,8 +128,9 @@ button,
 input,
 select,
 textarea {
-	color: #262626;
-	font-family: 'georgia', sans-serif;
+	color: #444;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+
 	font-size: 20px;
 	font-size: 2.0rem;
 	font-weight: 400;
@@ -148,12 +149,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 29px;
 	text-transform: uppercase;
-	font-family: 'raleway', arial;
 }
 h2 {
 	font-size: 1.0em;
 	line-height: 1.3em;
-	font-family: arvo, georgia;
 	text-transform: uppercase;
 	margin: 0 0 30px;
 	padding: 0;
@@ -842,11 +841,10 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	margin-bottom: 30px;
 }
 .page-title {
-	color: #000;
-	font-size: 1.9em;
+	font-size: 1.5em;
 	font-weight: 400;
 	line-height: 1.5em;
-	margin: 0 0 30px;
+	margin: 0 0 10px;
 	padding: 0;
 	word-wrap: break-word;
 }
@@ -854,7 +852,7 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	border-bottom: 0;
 }
 .hentry {
-	border-bottom: 8px solid #000;
+	border-bottom: 1px solid #ddd;
 	margin: 0;
 	padding: 30px 0 0;
 	-webkit-transition: all 0.2s ease;
@@ -960,11 +958,10 @@ body.page-template-page-full-width-php.widget-area .site-content{
 	width: 42.3913043%;
 }
 .entry-title {
-	font-family: "raleway", sans-serif;
 	text-transform: uppercase;
 	line-height: 1.0344827586;
 	padding: 0;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 	font-size: 29px;
 }
 .entry-meta{

@@ -47,12 +47,11 @@ if ( '' != get_the_post_thumbnail() ) : ?>
 				?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 					<header class="entry-header">
-						<div class="entry-meta">
-							<?php untitled_posted_on(); ?>
-						</div><!-- .entry-meta -->
 						<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+						<div class="entry-meta">
+							<?php the_date('m/j/Y') ?> by <?php the_author(); ?> (Profile)
+						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
@@ -91,26 +90,12 @@ if ( '' != get_the_post_thumbnail() ) : ?>
 
 							endif; // end check for categories on this blog
 
-							printf(
-								$meta_text,
-								$category_list,
-								$tag_list,
-								get_permalink(),
-								the_title_attribute( 'echo=0' )
-							);
-
-							edit_post_link( __( 'Edit', 'untitled' ), '<span class="edit-link">', '</span>' );
 						?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post-## -->
 
 				<?php
 						untitled_content_nav( 'nav-below' );
-
-						// If comments are open or we have at least one comment, load up the comment template
-						if ( comments_open() || '0' != get_comments_number() ) :
-							comments_template();
-						endif;
 					endwhile;
 				?>
 

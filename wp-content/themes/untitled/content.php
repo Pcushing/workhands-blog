@@ -12,36 +12,35 @@
 			</a>
 		</div><!-- .single-thumbnail -->
 		<div class="header-wrapper">
+			<header class="entry-header">
+				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			</header><!-- .entry-header -->
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php untitled_posted_on(); ?>
 				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="sep"> - </span>
-				<span class="comments-link"><?php comments_popup_link( __( '0 comments', 'untitled' ), __( '1 Comment', 'untitled' ), __( '% Comments', 'untitled' ) ); ?></span>
 				<?php endif; ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
-			<header class="entry-header">
-				<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-			</header><!-- .entry-header -->
-
 			<?php edit_post_link( __( 'Edit', 'untitled' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 		</div><!-- .header-wrapper -->
 
 	<?php else : ?>
 
 		<header class="entry-header">
-			<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php untitled_posted_on(); ?>
-				<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-				<span class="sep"> - </span>
-				<span class="comments-link"><?php comments_popup_link( __( '0 comments', 'untitled' ), __( '1 Comment', 'untitled' ), __( '% Comments', 'untitled' ) ); ?></span>
-				<?php endif; ?>
-			</div><!-- .entry-meta -->
-			<?php endif; ?>
+			
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		
 		</header><!-- .entry-header -->
+		<?php if ( 'post' == get_post_type() ) : ?>
+		<div class="entry-meta">
+			<?php untitled_posted_on(); ?>
+			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+			<span class="sep"> - </span>
+			<span class="comments-link"><?php comments_popup_link( __( '0 comments', 'untitled' ), __( '1 Comment', 'untitled' ), __( '% Comments', 'untitled' ) ); ?></span>
+			<?php endif; ?>
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
