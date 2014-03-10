@@ -50,10 +50,9 @@ if ( '' != get_the_post_thumbnail() ) : ?>
 					<header class="entry-header">
 						<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
 						<div class="entry-meta">
-							<?php the_date('m/j/Y') ?> by <?php the_author(); ?>
-							<span class="sep">-</span>
-							<a href="<?php the_author_meta('user_url') ?>" target="_blank">Profile</a> 
-						</div><!-- .entry-meta -->
+							<?php the_date('m/j/Y') ?> by 
+							<a href="<?php the_author_meta('user_url') ?>" target="_blank"><?php the_author(); ?></a> 
+ 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">

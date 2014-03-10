@@ -34,8 +34,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php the_date('m/j/Y') ?> by <?php the_author(); ?>
-			<span class="sep">-</span>
-			<a href="<?php the_author_meta('user_url') ?>" target="_blank">Profile</a>
+			<a href="<?php the_author_meta('user_url') ?>" target="_blank"><?php the_author(); ?></a> 
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 
