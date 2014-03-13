@@ -58,13 +58,16 @@ if ( '' != get_the_post_thumbnail() ) : ?>
 					<div class="entry-content">
 						<?php
 							the_content();
+							get_template_part('share');
 							wp_link_pages( array(
 								'before' => '<div class="page-links">' . __( 'Pages:', 'untitled' ),
 								'after'  => '</div>',
 							) );
 						?>
 					</div><!-- .entry-content -->
-
+					<?php
+						
+					?>
 					<footer class="entry-meta">
 						<?php
 							/* translators: used between list items, there is a space after the comma */
@@ -94,7 +97,6 @@ if ( '' != get_the_post_thumbnail() ) : ?>
 						?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post-## -->
-
 				<?php
 						get_template_part('nav-below');
 					endwhile;

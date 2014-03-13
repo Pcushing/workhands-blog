@@ -166,3 +166,24 @@ require get_template_directory() . '/inc/custom-header.php';
 if ( file_exists( get_template_directory() . '/inc/jetpack.php' ) )
 	require get_template_directory() . '/inc/jetpack.php';
 
+function my_init() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery'); 
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js', false, '1.3.2'); 
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'my_init');
+
+// Load responsive buttons js
+
+function load_responsive_javascript() {
+	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr-2.6.2-respond-1.1.0.min.js', array('jquery'), false, true);
+	wp_enqueue_script('modernizr');
+	wp_register_script('rrssb', get_template_directory_uri() . '/js/rrssb.min.js', false, false, false);
+	wp_enqueue_script('rrssb');
+
+}
+add_action('wp_enqueue_scripts', 'load_responsive_javascript');
+
