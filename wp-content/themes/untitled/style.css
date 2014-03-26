@@ -900,6 +900,7 @@ body.page-template-page-full-width-php.widget-area .site-content{
 .entry-summary {
 	margin: 0;
 	padding: 0;
+	line-height: 1.7;
 }
 
 .entry-content img {
