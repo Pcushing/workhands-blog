@@ -32,7 +32,7 @@
 						<img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 					</a>
 					<?php else : ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://dlq4neh27kdoh.cloudfront.net/assets/logo-cff1f35559f3f9a0ca73792fde309c6b.png" alt="workhands" /></a>
+					<a href="https://www.workhands.us" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://dlq4neh27kdoh.cloudfront.net/assets/logo-cff1f35559f3f9a0ca73792fde309c6b.png" alt="workhands" /></a>
 					<?php endif; ?>
 				</div>
 				<div class="nav-wrap">
