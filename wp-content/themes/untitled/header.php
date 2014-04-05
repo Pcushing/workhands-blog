@@ -38,14 +38,6 @@
 				<div class="nav-wrap">
 					<nav role="navigation" class="site-navigation main-navigation">
 						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'untitled' ); ?>"><?php _e( 'Skip to content', 'untitled' ); ?></a></div>
-
-						<div class='menu'>
-							<ul>
-								<li>
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Blog</a>
-								</li>
-							</ul>
-						</div>
 					</nav><!-- .site-navigation -->
 				</div><!-- .nav-wrap -->
 			</header><!-- #masthead -->
