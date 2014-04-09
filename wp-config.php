@@ -40,8 +40,6 @@ define('DB_COLLATE', '');
 define( 'AWS_ACCESS_KEY_ID', $_ENV["WP_AWS_ACCESS_KEY_ID"] );
 define( 'AWS_SECRET_ACCESS_KEY', $_ENV["WP_AWS_SECRET_ACCESS_KEY"] );
 
-define('WP_HOME','http://localhost:8888');
-define('WP_SITEURL','http://localhost:8888');
 
 /**#@+
  * Authentication Unique Keys and Salts.
