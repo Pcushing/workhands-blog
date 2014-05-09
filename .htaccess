@@ -1,4 +1,4 @@
-Redirect 301 /2014/04/01/325/ /2014/04/01/work-boots-the-cheap-the-expensive-and-the-painful/
+Redirect 301 /2014/04/01/325/ http://blog.workhands.com/2014/04/01/work-boots-the-cheap-the-expensive-and-the-painful/
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
