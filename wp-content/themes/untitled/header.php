@@ -27,13 +27,7 @@
 		<div id="masthead-wrap">
 			<header id="masthead" class="site-header" role="banner">
 				<div id="logo">
-					<?php if ( get_header_image() ) : ?>
-					<a href="https://www.workhands.us" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
-					</a>
-					<?php else : ?>
-					<a href="https://www.workhands.us" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://dlq4neh27kdoh.cloudfront.net/assets/logo-cff1f35559f3f9a0ca73792fde309c6b.png" alt="workhands" /></a>
-					<?php endif; ?>
+					<a href="https://www.workhands.us" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="https://dlq4neh27kdoh.cloudfront.net/assets/static/logo.png" alt="workhands" /></a>
 				</div>
 				<div class="nav-wrap">
 					<nav role="navigation" class="site-navigation main-navigation">
